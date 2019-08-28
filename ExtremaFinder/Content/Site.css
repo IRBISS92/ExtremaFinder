@@ -1,0 +1,30 @@
+﻿body {
+    font-size: 13px;
+    font-family: 'Roboto';
+    color: black;
+}
+#title {
+    font-size: 49px;
+    font-weight: 900;
+    padding: 50px 0;
+}
+.chart-wrapper {
+    background: #efefef;
+    height: 400px;
+}
+input {
+    border-radius: 40px;
+}
+.btn-search {
+    background: black;
+    width: 145px;
+    height: 55px;
+    border-radius: 40px;
+    font-weight: 900;
+    font-size: 13px;
+    color: white;
+    margin-top: 20px;
+}
+.form-check span {
+    padding-left: 8px;
+}

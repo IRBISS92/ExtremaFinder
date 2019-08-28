@@ -1,0 +1,16 @@
+@Html.DevExpress().Chart(settings => {
+    settings.Name = "Chart";
+    settings.Width = 700;
+    settings.Height = 400;
+    settings.CrosshairEnabled = DefaultBoolean.False;
+    settings.CrosshairOptions.ShowValueLine = false;
+    settings.XYDiagram(s => {
+        foreach (var item in ViewBag.Peaks)
+        {
+            s.AxisX.ConstantLines.Add(item);
+        }
+    });
+    settings.Series.Add(ViewBag.Series);
+
+
+}).Bind(Model).GetHtml()
